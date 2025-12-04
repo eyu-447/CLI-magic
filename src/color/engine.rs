@@ -1,0 +1,46 @@
+pub fn print_colored(text: &str, color: &str) {
+    match color.to_lowercase().as_str() {
+        "black" => println!("\x1b[38;5;16m{}\x1b[0m", text),
+        "red" => println!("\x1b[38;5;196m{}\x1b[0m", text),
+        "dark_red" => println!("\x1b[38;5;124m{}\x1b[0m", text),
+        "light_red" => println!("\x1b[38;5;203m{}\x1b[0m", text),
+        "orange" => println!("\x1b[38;5;208m{}\x1b[0m", text),
+        "dark_orange" => println!("\x1b[38;5;130m{}\x1b[0m", text),
+        "yellow" => println!("\x1b[38;5;226m{}\x1b[0m", text),
+        "dark_yellow" => println!("\x1b[38;5;184m{}\x1b[0m", text),
+        "light_yellow" => println!("\x1b[38;5;229m{}\x1b[0m", text),
+        "green" => println!("\x1b[38;5;46m{}\x1b[0m", text),
+        "dark_green" => println!("\x1b[38;5;22m{}\x1b[0m", text),
+        "light_green" => println!("\x1b[38;5;118m{}\x1b[0m", text),
+        "cyan" => println!("\x1b[38;5;51m{}\x1b[0m", text),
+        "dark_cyan" => println!("\x1b[38;5;30m{}\x1b[0m", text),
+        "light_cyan" => println!("\x1b[38;5;159m{}\x1b[0m", text),
+        "blue" => println!("\x1b[38;5;21m{}\x1b[0m", text),
+        "dark_blue" => println!("\x1b[38;5;18m{}\x1b[0m", text),
+        "light_blue" => println!("\x1b[38;5;75m{}\x1b[0m", text),
+        "magenta" => println!("\x1b[38;5;201m{}\x1b[0m", text),
+        "dark_magenta" => println!("\x1b[38;5;127m{}\x1b[0m", text),
+        "light_magenta" => println!("\x1b[38;5;213m{}\x1b[0m", text),
+        "brown" => println!("\x1b[38;5;94m{}\x1b[0m", text),
+        "dark_brown" => println!("\x1b[38;5;94m{}\x1b[0m", text),
+        "light_brown" => println!("\x1b[38;5;180m{}\x1b[0m", text),
+        "pink" => println!("\x1b[38;5;218m{}\x1b[0m", text),
+        "dark_pink" => println!("\x1b[38;5;161m{}\x1b[0m", text),
+        "light_pink" => println!("\x1b[38;5;219m{}\x1b[0m", text),
+        "purple" => println!("\x1b[38;5;93m{}\x1b[0m", text),
+        "dark_purple" => println!("\x1b[38;5;54m{}\x1b[0m", text),
+        "light_purple" => println!("\x1b[38;5;177m{}\x1b[0m", text),
+        "white" => println!("\x1b[38;5;15m{}\x1b[0m", text),
+        "gray" => println!("\x1b[38;5;246m{}\x1b[0m", text),
+        "light_gray" => println!("\x1b[38;5;250m{}\x1b[0m", text),
+        "dark_gray" => println!("\x1b[38;5;238m{}\x1b[0m", text),
+        "info" => println!("\x1b[38;5;51m{}\x1b[0m", text),
+        "warn" => println!("\x1b[38;5;208m{}\x1b[0m", text),
+        "error" => println!("\x1b[38;5;196m{}\x1b[0m", text),
+        _ => println!("{}", text),
+    }
+}
+
+pub fn info(text: &str) { print_colored(text, "info"); }
+pub fn warn(text: &str) { print_colored(text, "warn"); }
+pub fn error(text: &str) { print_colored(text, "error"); }

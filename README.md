@@ -38,7 +38,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-cli_magic = { git = "https://github.com/YOURUSERNAME/cli-magic.git" }
+cli_magic = { git = "https://github.com/eyu-447/CLI-magic.git" }
 ```
 
 
@@ -88,8 +88,3 @@ fn main() {
 - **Professional look**: Colors, spinners, tables, and logs out-of-the-box  
 - **Highly customizable**: Add your own colors, themes, or effects  
 - **Modular**: Use only the parts you need or the full framework  
-
----
-
-**License:** MIT  
-**Repository:** [https://github.com/YOURUSERNAME/cli-magic](https://github.com/YOURUSERNAME/cli-magic)

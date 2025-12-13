@@ -1,9 +1,9 @@
 [package]
-name = "cli-magic"
+name = "awesome-cli"  
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
 rpassword = "7.4.0"
-chrono = "0.4"  
+chrono = "0.4"
 cli-magic = { git = "https://github.com/eyu-447/CLI-magic.git" }
